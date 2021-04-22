@@ -3,5 +3,6 @@
 <p>Este Archivo contiene ambas configuraciones:</p>
 Busqueda por profundidad y Busqueda por anchura
 Ademas de contener un contador de iteraciones para saber la cantidad de iteraciones necesarias para obtener el resultado en ambas configuraciones
+<p>Solo Contiene 5 valores</p>
 <h3>Busqueda por Costo Uniforme</h2>
 En proceso...
