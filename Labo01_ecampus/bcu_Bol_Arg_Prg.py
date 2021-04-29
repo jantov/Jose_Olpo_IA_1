@@ -104,10 +104,28 @@ if __name__ == "__main__":
         'Neuquen': {'Rawson': 744, 'Mar del Plata': 997, 'Ciudad de Buenos Aires':1142, 'La Plata': 1163, 'Mendoza': 795,
                     'Cordoba': 1116},
         'Rawson': {'Neuquen': 744, 'Mar del Plata': 997, 'La Plata': 1438, 'Rio Gallegos': 1162},
-        'Rio Gallegos': {'Rawson': 1162}
+        'Rio Gallegos': {'Rawson': 1162},
+        
+        'Arica': {'La Paz': 489, 'Oruro': 474, 'Iquique': 309, 'Calama':599},
+        'Iquique': {'Arica': 309, 'Oruro': 479, 'Antofagasta': 416, 'Calama': 384},
+        'Calama': {'Potosi': 631, 'Arica': 599, 'Iquique': 384, 'Antofagasta': 217,'San Salvador de Jujuy': 576},
+        'Antofagasta': {'Iquique': 316, 'Calama': 217, 'Copiapo': 539},
+        'Copiapo': {'Antofagasta': 539, 'Tucuman': 1033, 'La Serena': 337},
+        'La Serena': {'Copiapo': 337, 'Mendoza': 666, 'Valparaiso': 431, 'Santiago': 472},
+        'Valparaiso': {'Santiago': 115, 'La Serena': 431, },
+        'Santiago': {'Mendoza': 363, 'Valparaiso': 115, 'La Serena': 472, 'Ranacagua': 87},
+        'Ranacagua': {'Santiago': 87, 'Talca': 172},
+        'Talca': {'Ranacagua': 172, 'Chillan': 151},
+        'Chillan': {'Talca': 151, 'Concepcion': 99, 'Temuco': 277},
+        'Cocepcion': {'Temuco': 293, 'Chillan': 99},
+        'Temuco': {'Chillan': 277, 'Concepcion': 293, 'Neuquen': 513, 'Valdivia': 169},
+        'Valdivia': {'Temuco': 169, 'Puerto Mont': 213},
+        'Puerto Mont': {'Valdivia': 213, 'Coyhaique': 660},
+        'Coyhaique': {'Rawson': 776, 'Puerto Mont': 660, 'Rio Gallegos': 1152},
+        'Punta Arenas': {'Rio Gallegos': 262}
     }
-    estado_inicial = 'Rio Gallegos'
-    solucion = 'Salto de Guaira'
+    estado_inicial = 'Punta Arenas'
+    solucion = 'Cobija'
     nodo_solucion = busqueda_BCU(conecciones, estado_inicial, solucion)
     # Mostrar resultado
     resultado = []
