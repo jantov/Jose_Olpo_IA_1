@@ -45,7 +45,30 @@ class tablero ():
             if ind[i] == self.tab_final[i]:
                 punt += 1
         return punt
-
+    
+    def fitness_2(self, ind):
+        punt = 0
+        for i in range(len(ind)):
+            if ind[i] == 0:
+                if (i + 1) % 6 != 1 and ind[i - 1] == 1:
+                    punt += 1
+                if (i + 1) % 6 != 0 and ind[i + 1] == 1:
+                    punt += 1
+                if i + 6 < len(ind) and ind[i + 6] == 1:
+                    punt += 1
+                if i - 6 >= 0 and ind[i - 6] == 1:
+                    punt +=1
+            else:
+                if (i + 1) % 6 != 1 and ind[i - 1] == 0:
+                    punt += 1
+                if (i + 1) % 6 != 0 and ind[i + 1] == 0:
+                    punt += 1
+                if i + 6 < len(ind) and ind[i + 6] == 0:
+                    punt += 1
+                if i - 6 >= 0 and ind[i - 6] == 0:
+                    punt += 1
+        return punt
+    
     #SELECCIONADOS ALMACENADOS EN TUPLAS EN UNA LISTA
     def seleccion(self, poblacion):
 
