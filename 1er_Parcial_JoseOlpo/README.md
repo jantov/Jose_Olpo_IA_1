@@ -12,3 +12,4 @@ a partir de 7 el tiempo de espera es muy largo entre cada jugada, las reglas del
 <p>Algoritmo Genetico</p>
 <p>La forma mas sencilla de realizar el fitnes fue por simple comparacion, aunque se puede verificar si a izq o derecha tenemos un valor diferente de 0 o 1, la mejor y mas facil manera de obtener un fitness es mediante la comparacion de un objetivo contra la poblacion generada</p>
 <p>Solo se uso una clase donde se encuntra mayoria de funciones para poder realizar el alg genetico, ademas de agregar un forma grafica de comprobar con pygame</p>
+<p>De igual manera se agrego un fitness extra con las especificaciones hechas en foro</p>
