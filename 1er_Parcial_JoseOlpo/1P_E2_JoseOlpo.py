@@ -12,6 +12,7 @@ import time
 from os import system
 import math
 
+
 TAMANO = 4
 
 # FUNCIONES DE TABLERO
@@ -259,7 +260,7 @@ while True:
         #(tablero, profundidad, alpha, beta, max )
         mov1, punt = minimax(tablero, profundidad, -math.inf, math.inf, True)
         marcar(tablero, mov1, icono_IA)
-        print(icono_IA)
+        #print(icono_IA)
         mostrar_tablero(tablero)
 
         if fin(tablero, icono_IA):
