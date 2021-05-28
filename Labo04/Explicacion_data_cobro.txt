@@ -1,0 +1,38 @@
+dataset ordenado de la siguiente forma
+El dataset contiene datos de cobros de formar randomica
+de acuerdo a varios ejemplos de la pagina fiver sobre 
+la cotizacion de una animacion en motion graphics
+A la generacion se introdujo un valor minimo en cuanto a las veces
+donde exista algun tipo de mala cotizacion ya sea a favor o en contra
+
+tipo, calidad, duracion maxima, sonido, numero de revisiones, precio
+
+traducido a "X" y "Y" es:
+
+x1, x2, x3, x4, x5, y
+
+costo de trabajo
+
+1 tipo
+	1 MG 2D
+	2 MG 3D
+	3 Mg Hibrid
+
+2 calidad
+	1 basico (30 fps) max 3scenes
+	2 standar (40 fps) max 6 scenes
+	3 premium (60 fps) max 10 scenes
+3 duracion maxima
+	20s
+	40s
+	60s
+4 Sonido
+	1 No sound
+	2 Only music
+	3 Music and Voice
+5 numero de revisiones
+	1- 9
+
+7 Precio
+	en dolares $
+
